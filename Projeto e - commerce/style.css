@@ -1,0 +1,395 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+   background:#efefef;
+  height:100vh;
+  overflow:auto;
+}
+
+header{
+  position: fixed;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  z-index: 2000;  
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  height: 100px;
+  margin-top: 10px;
+}
+
+
+.left, .right{
+  font-size:14px;
+  cursor:pointer;
+}
+
+.left {
+  font-size: 35px;
+}
+
+main{
+  width:100%;
+}
+
+.background-shape{
+  position:absolute;
+  width:900px;
+  height:900px;
+  border-radius:50%;
+}
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.slide.active{
+    opacity: 1;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.destaques {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.lancamentos{
+margin: 0 auto;
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 80px;
+margin-top: 40px;
+}
+
+.lancamentos img{
+width: 100%;
+display: block;
+margin: 0 auto;
+}
+
+.lancamentos div{
+margin-top: 2px;
+font-size: 18px;
+}
+
+.produto-img{
+position: relative;
+width: 300px;
+height: 300px;
+margin: auto;
+}
+
+.produto-img img{
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.img2{
+opacity: 0;
+transition: opacity 0.4s;
+}
+
+.produto-img:hover .img1{
+opacity: 0;
+}
+
+.produto-img:hover .img2{
+opacity: 1;
+}
+
+.produto p{
+margin-top: 10px;
+}
+
+.produto1 .img1,
+.produto1 .img2{
+top: -40px;
+}
+
+
+.photos{
+  display: flex;
+  gap: 5px;
+  margin-top: 70px;
+}
+
+.photo{
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.photo a{
+  display: block;
+}
+
+.photo img{
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.photo:hover img{
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+.tphoto{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.botao{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background: transparent; 
+  color: white; 
+  border: 2px solid white; 
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.photo:hover .botao{
+  opacity: 1;
+}
+
+.left{
+  margin-top:-20px;
+}
+
+.right{
+  margin-top:-20px;
+}
+
+.left img {
+  width: 50px;   
+  height: auto;  
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  background: white;
+  padding: 120px 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: gray;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  z-index: 900;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu {
+  max-height: 0;
+  display: flex;    
+  overflow: hidden;
+  transition: max-height 1.0s ease;
+  margin-left: 15px;
+  flex-direction: column;
+}
+
+.dropdown:hover .submenu {
+  max-height: 200px;
+}
+
+.submenu a {
+  font-size: 18px;
+  color: #000000;
+}
+
+.titulo {
+  text-align: center;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  font-size: 50px;
+}
+
+.page-bg{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  pointer-events:none;
+}
+
+.background-shape{
+  position:absolute;
+  width:900px;
+  height:900px;
+  border-radius:50%;
+  z-index:-1;
+  pointer-events:none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  background: white;
+  padding: 120px 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+
+  z-index: 5000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+
+  z-index: 4000;
+}
+
+.logoo{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ margin-top:20px;
+}
+
+.logoo img{
+ max-width:100%;
+ height:auto;
+}
+
+.titulo {
+  margin-top: -150px;
+}
+
+
+@font-face {
+  font-family:'fontec';
+  src: url('CloisterBlack.ttf') format('tff');
+}
+
+.camisetas1 {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+}
+
+
+
