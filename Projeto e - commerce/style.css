@@ -6,7 +6,7 @@
 }
 
 body{
-   background:#efefef;
+   background:#ffffff;
   height:100vh;
   overflow:auto;
 }
@@ -161,7 +161,7 @@ top: -40px;
 
 .photos{
   display: flex;
-  gap: 5px;
+  gap: 15px;
   margin-top: 70px;
 }
 
@@ -213,6 +213,219 @@ top: -40px;
 .photo:hover .botao{
   opacity: 1;
 }
+
+.models {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.model a{
+  display: block;
+}
+
+.model img{
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.model:hover img{
+  filter: brightness(70%);
+}
+
+.tmodel{
+  position: relative;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.model a {
+  display: block;
+  text-decoration: none; 
+  color: inherit;
+}
+
+.linha {
+  border-top: 2px solid rgb(231, 231, 231);
+  margin-top: 40px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  color: rgb(163, 163, 163);
+}
+
+.cabecalho2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*Whitebluetshirtpage*/
+
+/* Container que segura as duas colunas */
+.product-page-wrapper {
+    display: flex;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 60px; /* Espaço entre as fotos e o texto */
+    font-family: sans-serif;
+    margin-top: 70px;
+    
+}
+
+/* Coluna das Imagens */
+.product-gallery {
+    display: flex;
+    flex: 2; /* Ocupa 2 partes do espaço */
+    gap: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80px;
+}
+
+.thumbnails img {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.thumbnails img.active {
+    border: 1px solid #000;
+}
+
+.main-image-container {
+    flex: 1;
+    display: flex;
+    margin-top: -60px;
+}
+
+.main-image-container img {
+    width: 100%;
+    display: block;
+}
+
+/* Coluna de Texto */
+.product-info-column {
+    flex: 1; /* Ocupa 1 parte do espaço */
+}
+
+.product-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.variant-thumb {
+    width: 60px;
+    border: 1px solid #ddd;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.variant-thumb.active {
+    border-color: #000;
+}
+
+/* Tamanhos */
+.size-selector-container {
+    margin: 30px 0;
+}
+
+.size-selector-container .label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.size-options {
+    display: flex;
+    gap: 8px;
+}
+
+.size-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 10px 15px;
+    min-width: 50px;
+    cursor: pointer;
+}
+
+.size-btn.out-of-stock {
+    color: #ccc;
+    text-decoration: line-through;
+    border-color: #f0f0f0;
+}
+
+/* Botão Preto Estilo BAPE */
+.action-button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+/* Detalhes/Accordion */
+details {
+    border-top: 1px solid #eee;
+}
+
+summary {
+    list-style: none;
+    padding: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .left{
   margin-top:-20px;
@@ -372,18 +585,13 @@ top: -40px;
 
 .logoo img{
  max-width:100%;
- height:auto;
+ height:110px;
 }
 
 .titulo {
   margin-top: -150px;
 }
 
-
-@font-face {
-  font-family:'fontec';
-  src: url('CloisterBlack.ttf') format('tff');
-}
 
 .camisetas1 {
   display: flex;

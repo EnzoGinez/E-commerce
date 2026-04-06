@@ -32,3 +32,25 @@ function mudarSlide(n = 1){
 setInterval(function(){
   mudarSlide(1);
 }, 4000);
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+    const mainImg = document.getElementById('main-featured');
+
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+          
+            const newSrc = this.src;
+            mainImg.src = newSrc;
+            thumbnails.forEach(img => img.classList.remove('active'));
+            this.classList.add('active');
+            
+
+            console.log("Imagem alterada para: " + newSrc);
+        });
+    });
+});
