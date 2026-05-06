@@ -89,40 +89,17 @@ In build
 
 ---
 
-## 🚀 Running Locally
+🎯 Objective
 
-No setup needed. Just open `index.html` in any modern browser:
+The objective of this project is to develop a modern and functional E-commerce application, focusing on improving front-end development skills and creating intuitive and responsive user interfaces.
 
-```bash
-# Option 1 — open directly
-open index.html
+The application simulates the behavior of a real online store, allowing users to view products, interact with page elements, and navigate through different sections.
 
-# Option 2 — use a local server (recommended to avoid CORS issues with images)
-npx serve .
-# or
-python -m http.server 8000
-```
+The project also aims to strengthen knowledge in HTML, CSS, and JavaScript, with an emphasis on DOM manipulation and code organization.
 
-Then visit `http://localhost:8000`.
+As future improvements, the project is expected to include more advanced features such as API integration, user authentication, a dynamic shopping cart, and backend integration, making the application closer to a real-world professional system.
 
-> ⚠️ **Note:** The `images/` folder is required for the site to display correctly. Make sure all image assets are present before running.
+👨‍💼 Author
 
----
-
-## 📸 Image Assets
-
-Images are not included in the repository. The following files are expected inside the `/images` folder:
-
-- Logo: `pngwing.com.png`
-- Product shots: `camisa11.png`, `camisa 12.png`, `camista13.png`, `camisteta14.png`, `camisa15.png` through `camisa18.png`
-- TOP collection: `top2.png` through `top6.png`
-- Hero slides: `i1.jpg` through `i5.jpg`
-- Category banners: `photo1.jpg`, `photo2.jpg`
-- Models: `model1.jpg`, `model2.jpg`, `model3.jpg`
-- Icons: `126510-removebg-preview.png`, `png-clipart-computer-icons-user-login-gender-miscellaneous-desktop-wallpaper-thumbnail-removebg-preview.png`, `instagram (1).png`, `youtube.png`
-
----
-
-## 📄 License
-
-Private project. All rights reserved.
+Enzo Ginez Souza
+Computer Science Student
