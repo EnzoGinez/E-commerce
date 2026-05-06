@@ -54,3 +54,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const elementos = document.querySelectorAll('.animar');
+
+function animarScroll() {
+  const alturaTela = window.innerHeight;
+
+  elementos.forEach(el => {
+    const distanciaTopo = el.getBoundingClientRect().top;
+
+    if (distanciaTopo < alturaTela - 100) {
+      el.classList.add('ativo');
+    }
+  });
+}
+
+window.addEventListener('scroll', animarScroll);
+
+window.addEventListener('load', () => {
+  const elementos = document.querySelectorAll('.aparecer');
+
+  elementos.forEach((el, index) => {
+    setTimeout(() => {
+      el.classList.add('ativo');
+    }, index * 200); // delay entre elementos
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.getElementById("filterBtn");
+  const menu = document.getElementById("filterMenu");
+
+  if (btn && menu) {
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  }
+
+});
+
