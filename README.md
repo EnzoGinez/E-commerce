@@ -89,7 +89,7 @@ In build
 
 ---
 
-🎯 Objective
+## 🎯 Objective
 
 The objective of this project is to develop a modern and functional E-commerce application, focusing on improving front-end development skills and creating intuitive and responsive user interfaces.
 
@@ -99,7 +99,7 @@ The project also aims to strengthen knowledge in HTML, CSS, and JavaScript, with
 
 As future improvements, the project is expected to include more advanced features such as API integration, user authentication, a dynamic shopping cart, and backend integration, making the application closer to a real-world professional system.
 
-👨‍💼 Author
+### 👨‍💼 Author
 
 Enzo Ginez Souza
 Computer Science Student
