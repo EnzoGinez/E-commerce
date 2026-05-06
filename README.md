@@ -1,6 +1,8 @@
-# 🖤 Chrome Hearts E-Commerce
+#  E-Commerce
 
-A luxury streetwear e-commerce frontend built with pure HTML, CSS, and JavaScript — no frameworks, no dependencies.
+A streetwear e-commerce built with  HTML, CSS, and JavaScript — no frameworks, no dependencies.
+
+In build
 
 ---
 
