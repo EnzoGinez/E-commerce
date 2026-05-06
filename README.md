@@ -102,4 +102,5 @@ As future improvements, the project is expected to include more advanced feature
 ### 👨‍💼 Author
 
 Enzo Ginez Souza
+
 Computer Science Student
